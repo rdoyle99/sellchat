@@ -8,13 +8,15 @@ function changeurl() {
   function handleSubmit() {
     console.log(formValue)
     outputValue.innerHTML = "https://upbeat-snyder-ac6958.netlify.app/view?" + formValue
-    outputValue.innerHTML.href = "/view" + formValue
+    outputValue.href = "https://upbeat-snyder-ac6958.netlify.app/view?" + formValue
   }
 
 
 
 }
 
-const queryString = window.location.search;
-var title = document.getElementById("title")
-title.innerHTML = queryString
+window.onload = function() {
+  const queryString = window.location.search;
+  var title = document.getElementById("title")
+  title.innerHTML = queryString
+}
