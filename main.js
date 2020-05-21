@@ -7,7 +7,8 @@ function changeurl() {
 
   function handleSubmit() {
     console.log(formValue)
-    outputValue.innerHTML = "https://upbeat-snyder-ac6958.netlify.app/?" + formValue 
+    outputValue.innerHTML = "https://upbeat-snyder-ac6958.netlify.app/?" + formValue
+    outputValue.innerHTML.href = "https://upbeat-snyder-ac6958.netlify.app/?" + formValue 
   }
 
 
