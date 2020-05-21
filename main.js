@@ -1,17 +1,17 @@
-const queryString = window.location.search;
-console.log(queryString);
-
-
-
-
-/*
+function changeurl() {
   var form = document.getElementById("inputurl")
+  var formValue = document.getElementById("inputurl").value;
   var outputValue = document.getElementById("outputurl")
 
-  form.addEventListener("submit", createurl)
+  form.addEventListener("submit", handleSubmit())
 
-  function createurl() {
-    var formValue = document.getElementById("inputurl").value;
+  function handleSubmit() {
     console.log(formValue)
+    outputValue.innerHTML = "https://upbeat-snyder-ac6958.netlify.app/?" + formValue 
   }
-*/
+
+
+
+}
+
+//const queryString = window.location.search;

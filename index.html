@@ -5,11 +5,11 @@
 </head>
 <body>
 
-  <form >
+  <form onsubmit="event.preventDefault(); changeurl()">
     <input id="inputurl"> </input>
-    <input type="submit"> </input>
-  <form>
-  <div id="outputurl"> enter a url to get a new one </div>
+    <button type="submit"> Submit </button>
+  </form>
+  <p id="outputurl"> enter a url to get a new one </p>
 
 
 
