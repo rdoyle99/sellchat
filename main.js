@@ -14,9 +14,3 @@ function changeurl() {
 
 
 }
-
-window.onload = function() {
-  const queryString = window.location.search;
-  var title = document.getElementById("title")
-  title.innerHTML = queryString
-}
